@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Tic Tac Toe Kelompok 1</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+  
+  <div class="overlay">
+   <div class="player_container_kiri">
+      <div id="player_karakter" class="player1 animasi_menang">
+        <div class="img_player">
+          <img src="dist/images/player.png" alt="">
+          <div class="tangan_kiri">
+            <img src="dist/images/player_kiri.png" alt="">
+          </div>
+          <div class="tangan_kanan">
+            <img src="dist/images/player_kanan.png" alt="">
+          </div>
+          <div class="ketawa">
+            <img src="dist/images/ketawa.png" alt="">
+          </div>
+          <div class="img_player_kalah"></div>
+        </div>
+      </div>
+      <div class="text_karakter">
+        <p id="img_p1">Player 1</p>
+      </div>
+      <div id="player_karakter" class="player2 animasi_menang">
+        <div class="img_player">
+          <img src="dist/images/musuh.png" alt="">
+          <div class="tangan_kiri">
+            <img src="dist/images/musuh_kiri.png" alt="">
+          </div>
+          <div class="tangan_kanan">
+            <img src="dist/images/musuh_kanan.png" alt="">
+          </div>
+          <div class="ketawa">
+            <img src="dist/images/ketawa.png" alt="">
+          </div>
+          <div class="img_player_kalah"></div>
+        </div>        
+      </div>
+      <div class="text_karakter">
+        <p id="img_p2">Player 2</p>
+      </div>
+    </div>
+
+    <form action="#">
+      <div class="con">
+        <div class="head-form">
+          <h2>TicTacToe Games</h2>
+          <p>By Kelompok 1</p>
+        </div>
+        <br />
+        <div class="game-modes">
+          Pilih Mode :
+          <select name="" class="form-input" id="pilih_mode">
+            <option value="human">Human Vs Human</option>
+            <option value="cpu">Human Vs CPU</option>
+          </select>
+        </div>
+        <div class="field-set">
+          Player X : <input class="form-input" id="p1" type="text" placeholder="Nama Player 1 (X)"> <br />
+          Player O : <input class="form-input" id="p2" type="text" placeholder="Nama Player 2 (O)">
+          <br />
+        </div>
+        <button class="giliran" style="cursor: default; background :#97d9e1" disabled>--------</button>
+        <br />
+        
+        <div class="game-screen">
+          <div id="board_warp">
+            <div id="board">
+              <div class="cell-0 kolom" id="cell00"></div>
+              <div class="cell-1 kolom" id="cell01"></div>
+              <div class="cell-2 kolom" id="cell02"></div>
+              <div class="cell-3 kolom" id="cell10"></div>
+              <div class="cell-4 kolom" id="cell11"></div>
+              <div class="cell-5 kolom" id="cell12"></div>
+              <div class="cell-6 kolom" id="cell20"></div>
+              <div class="cell-7 kolom" id="cell21"></div>
+              <div class="cell-8 kolom" id="cell22"></div>
+            </div>
+          </div>
+        </div>
+    </form>
+    <button type="button" class="disabled" id="restart">Restart</button>
+  </div>
+
+  <script src="./dist/app.js"></script>
+</body>
+
+</html>

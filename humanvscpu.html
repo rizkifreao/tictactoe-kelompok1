@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tic Tac Toe Kelompok 1</title>
+	<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="dist/style.css">
+</head>
+<body>
+	
+	<div id="container">
+		<div id="sidebar_wrap">
+			<div id="sidebar">
+				<div>
+					<h3>Tic Tac Toe Kelompok1</h3>
+				</div>
+				<div id="img_karakter">
+					<div class="img_pemain">
+						<img src="dist/images/player.png" alt="">
+						<div class="tangan_kiri">
+							<img src="dist/images/player_kiri.png" alt="">
+						</div>
+						<div class="tangan_kanan">
+							<img src="dist/images/player_kanan.png" alt="">
+						</div>
+						<div class="img_ketawa">
+							<img src="dist/images/ketawa.png" alt="">
+						</div>
+						<div class="pemain_kalah"></div>
+					</div>
+					<div class="vs">vs</div>
+					<div class="robot">
+						<img src="dist/images/robot.png" alt="">
+						<div class="tangan_kiri">
+							<img src="dist/images/robot_kiri.png" alt="">
+							<div class="robot_senjata">
+								<img src="dist/images/pistol.png" alt="">
+							</div>
+						</div>
+						<div class="tangan_kanan">
+							<img src="dist/images/robot_kanan.png" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="field">
+					<label for="">Pilih Mode :</label>
+					<select id="pilih_mode">
+						<option value="">Human Vs AI</option>
+						<option value="humanVShuman">Human Vs Human</option>
+					</select>
+				</div>
+				<div class="field">
+					<label>Level</label>
+					<div class="depth_choices" id="depth">
+						<ul>
+							<li data-value="1">1</li>
+							<li data-value="2">2</li>
+							<li data-value="-1" class="active">3</li>
+							<!-- <li data-value="4">4</li>
+							<li data-value="-1" class="active">Unlimited</li> -->
+						</ul>
+					</div>
+				</div>
+
+				<div class="field">
+					<label>Dimulai dari :</label>
+					<div class="starting_player_choices" id="starting_player">
+						<ul>
+							<li data-value="1" class="active">Saya</li>
+							<li data-value="0">CPU</li>
+						</ul>
+					</div>
+				</div>
+
+				<p>Sesuaikan diatas lalu klik tombol</p>
+				<p>mainkan untuk memulai, have fun yaa :)</p>
+				
+				<button id="newgame">Mainkan</button>
+				
+			</div>
+		</div>
+		
+		<div id="board_wrap">
+			<div id="board"></div>
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="dist/bundle.js"></script>
+</body>
+</html>
